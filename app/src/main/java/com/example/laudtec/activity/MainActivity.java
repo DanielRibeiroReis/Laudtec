@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button botaoEntra;
+    public Button botaoEntra;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        botaoEntra = findViewById(R.id.entra);
+        botaoEntra = (Button) findViewById(R.id.entra);
 
         botaoEntra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, inicial.class);
+                Intent intent = new Intent(MainActivity.this, Inicial.class);
                 startActivity(intent);
             }
         });
