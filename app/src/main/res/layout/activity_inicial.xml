@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".inicial">
+    tools:context=".Inicial">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo2" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/entraAdministrador"
         style="@style/botaooutline"
         android:layout_width="0dp"
@@ -25,7 +25,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="64dp"
-        android:background="@drawable/botaooutline"
         android:text="Administrador"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +39,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/botaooutline"
         android:text="Colaborador"
         android:textColor="@color/amareloEscuro"
         app:layout_constraintBottom_toTopOf="@+id/entraAdministrador"

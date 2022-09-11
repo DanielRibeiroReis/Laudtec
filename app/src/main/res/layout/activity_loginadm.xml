@@ -20,10 +20,12 @@
 
     <EditText
         android:id="@+id/editTextNumber"
+        style="@style/inputCustom"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/input_custom"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,10 +45,12 @@
 
     <EditText
         android:id="@+id/editTextNumber2"
+        style="@style/inputCustom"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/input_custom"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,10 +81,12 @@
 
     <EditText
         android:id="@+id/editTextNumber3"
+        style="@style/inputCustom"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/input_custom"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,10 +94,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/esqueciSenhaid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="16dp"
         android:text="Esqueci minha senha"
         android:textColor="@color/cinzaLabel"
         android:textSize="14sp"
@@ -99,14 +105,15 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/entrarContaid"
         style="@style/botaoPricipal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:background="@drawable/entrarprimarioativado"
+        android:background="@drawable/botao_primario"
+        android:fitsSystemWindows="true"
         android:text="Entrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
