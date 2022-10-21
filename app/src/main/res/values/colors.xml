@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="amareloEscuro">#CEAA5B</color>
     <color name="cinzaLabel">#AEAEAE</color>
+    <color name="brancoTexto">#FFFDFD</color>
 </resources>

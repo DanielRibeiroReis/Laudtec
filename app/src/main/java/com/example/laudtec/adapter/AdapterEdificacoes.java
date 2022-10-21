@@ -15,7 +15,7 @@ import java.util.List;
 
 public class AdapterEdificacoes extends RecyclerView.Adapter<AdapterEdificacoes.EdificacoesVH> {
 
-    private List<Edificacoes> listaEdificacoes;
+    public List<Edificacoes> listaEdificacoes;
     public AdapterEdificacoes(List<Edificacoes> lista){
         this.listaEdificacoes = lista;
     }
@@ -35,6 +35,7 @@ public class AdapterEdificacoes extends RecyclerView.Adapter<AdapterEdificacoes.
     public void onBindViewHolder(@NonNull EdificacoesVH holder, int position) {
 
         Edificacoes edificio = listaEdificacoes.get(position);
+
 
         holder.compEdificio.setText(edificio.getNomeCompania());
         holder.nomeEdificio.setText(edificio.getNomeEdificio());

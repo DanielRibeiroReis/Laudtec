@@ -4,8 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Toast;
+
+import com.example.laudtec.activity.MainActivity;
 import com.example.laudtec.adapter.AdapterEdificacoes;
 
 import java.util.ArrayList;
@@ -13,9 +19,9 @@ import java.util.List;
 
 public class Edificacoes extends AppCompatActivity {
 
-    private RecyclerView listaEdificacoes;
+    public RecyclerView listaEdificacoes;
 
-    private List<com.example.laudtec.model.Edificacoes> listaEdificios = new ArrayList<com.example.laudtec.model.Edificacoes>();
+    public List<com.example.laudtec.model.Edificacoes> listaEdificios = new ArrayList<com.example.laudtec.model.Edificacoes>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +41,29 @@ public class Edificacoes extends AppCompatActivity {
         listaEdificacoes.setHasFixedSize(true);
 
         listaEdificacoes.setAdapter(adapter);
+
+        listaEdificacoes.addOnItemTouchListener(
+                new ClickListener(getApplicationContext(), listaEdificacoes, new ClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+                        com.example.laudtec.model.Edificacoes edificios = listaEdificios.get(position);
+                        Toast.makeText(Edificacoes.this, "click curto " + edificios.getNomeEdificio(), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(Edificacoes.this, questionario.class);
+                        startActivity(intent);
+
+                    }
+
+                    @Override
+                    public void onLongItemClick(View view, int position) {
+
+                    }
+
+                    @Override
+                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                    }
+                })
+        );
     }
 
     public void listarEd(){
