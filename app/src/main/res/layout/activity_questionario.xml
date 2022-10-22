@@ -10,15 +10,11 @@
     >
 
 
-
-
     <RadioGroup
         android:id="@+id/radioGrupoQuestionario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,8 +47,8 @@
             android:button="@android:color/transparent"
             android:clickable="false"
             android:focusable="false"
-            android:paddingHorizontal="12dp"
-            android:scaleX="1.5"
+            android:paddingHorizontal="4dp"
+            android:scaleX="3"
             android:translationX="-8sp" />
 
         <RadioButton
@@ -78,8 +74,8 @@
             android:button="@android:color/transparent"
             android:clickable="false"
             android:focusable="false"
-            android:paddingHorizontal="12dp"
-            android:scaleX="1.5"
+            android:paddingHorizontal="4dp"
+            android:scaleX="3"
             android:translationX="-8sp" />
 
         <RadioButton
@@ -105,9 +101,8 @@
             android:button="@android:color/transparent"
             android:clickable="false"
             android:focusable="false"
-            android:paddingHorizontal="12dp"
-
-            android:scaleX="1.5"
+            android:paddingHorizontal="4dp"
+            android:scaleX="3"
             android:translationX="-8sp" />
 
         <RadioButton
@@ -133,8 +128,8 @@
             android:button="@android:color/transparent"
             android:clickable="false"
             android:focusable="false"
-            android:paddingHorizontal="12dp"
-            android:scaleX="1.5"
+            android:paddingHorizontal="4dp"
+            android:scaleX="3"
             android:translationX="-8sp" />
 
         <RadioButton
@@ -152,19 +147,90 @@
             android:textColor="@color/brancoTexto"
             android:textSize="16sp" />
 
+        <RadioButton
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/radio_espaco"
+            android:button="@android:color/transparent"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingHorizontal="4dp"
+            android:scaleX="3"
+            android:translationX="-8sp" />
+
+        <RadioButton
+            android:id="@+id/radioPagina6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/radio_questionario"
+            android:button="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="6"
+            android:textColor="@color/brancoTexto"
+            android:textSize="16sp" />
+
+        <RadioButton
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/radio_espaco"
+            android:button="@android:color/transparent"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingHorizontal="4dp"
+            android:scaleX="3"
+            android:translationX="-8sp" />
+
+        <RadioButton
+            android:id="@+id/radioPagina7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/radio_questionario"
+            android:button="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="7"
+            android:textColor="@color/brancoTexto"
+            android:textSize="16sp" />
+
     </RadioGroup>
 
 
     <LinearLayout
         android:id="@+id/espacoquestionario"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/radioGrupoQuestionario"
-        tools:layout_editor_absoluteX="377dp">
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrupoQuestionario">
 
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button11"
+        style="@style/botaooutline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

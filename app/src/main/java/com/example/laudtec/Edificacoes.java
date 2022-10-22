@@ -70,14 +70,41 @@ public class Edificacoes extends AppCompatActivity {
         com.example.laudtec.model.Edificacoes edificio = new com.example.laudtec.model.Edificacoes("Sagres","Raíssa");
         this.listaEdificios.add(edificio);
 
-        edificio = new com.example.laudtec.model.Edificacoes("Sagres2", "Raíssa2");
+        edificio = new com.example.laudtec.model.Edificacoes("Paineiras", "Daniel");
         this.listaEdificios.add(edificio);
 
-        edificio  = new com.example.laudtec.model.Edificacoes("Sagres3","Raíssa3");
+        edificio  = new com.example.laudtec.model.Edificacoes("Res. Arquipelago de Abrolhos","Mayla");
         this.listaEdificios.add(edificio);
 
-        edificio  = new com.example.laudtec.model.Edificacoes("Sagres4","Raíssa4");
+        edificio  = new com.example.laudtec.model.Edificacoes("Res. Araucárias","Histivan inc.");
         this.listaEdificios.add(edificio);
+
+        edificio  = new com.example.laudtec.model.Edificacoes("Res. Olavo Bilac","Solange");
+        this.listaEdificios.add(edificio);
+
+        edificio  = new com.example.laudtec.model.Edificacoes("Res. Via Brisa","Rogério");
+        this.listaEdificios.add(edificio);
+
+        edificio  = new com.example.laudtec.model.Edificacoes("Res. Art Life","José Roberto inc.");
+        this.listaEdificios.add(edificio);
+
+        edificio  = new com.example.laudtec.model.Edificacoes("Res. Daniel1","1mil inc.");
+        this.listaEdificios.add(edificio);
+
+        edificio  = new com.example.laudtec.model.Edificacoes("Res. Daniel2","1mil inc.");
+        this.listaEdificios.add(edificio);
+
+        edificio  = new com.example.laudtec.model.Edificacoes("Res. Daniel3","1mil inc.");
+        this.listaEdificios.add(edificio);
+
+
+        edificio  = new com.example.laudtec.model.Edificacoes("Res. Daniel4","1mil inc.");
+        this.listaEdificios.add(edificio);
+
+
+
+
+
 
     }
 

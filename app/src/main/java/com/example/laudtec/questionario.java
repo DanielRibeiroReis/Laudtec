@@ -25,7 +25,10 @@ public class questionario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questionario);
 
-
+        LinearLayout parent = findViewById(R.id.espacoquestionario);
+        parent.removeAllViews();
+        View childView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.questionario1, parent, false);
+        parent.addView(childView);
 
         addListenerOnButton();
     }
