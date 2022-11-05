@@ -47,8 +47,10 @@ public class Edificacoes extends AppCompatActivity {
                     @Override
                     public void onItemClick(View view, int position) {
                         com.example.laudtec.model.Edificacoes edificios = listaEdificios.get(position);
-                        Toast.makeText(Edificacoes.this, "click curto " + edificios.getNomeEdificio(), Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(Edificacoes.this, "click curto " + edificios.getNomeEdificio(), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(Edificacoes.this, questionario.class);
+                        String extraEdificio = edificios.getNomeEdificio();
+                        intent.putExtra("NOME_EDIFIO_SELEC" ,extraEdificio);
                         startActivity(intent);
 
                     }

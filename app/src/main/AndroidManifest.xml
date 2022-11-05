@@ -14,10 +14,15 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
         <activity
+            android:name=".normas"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".questionario"
-            android:exported="true"
-            />
-
+            android:exported="true" />
         <activity
             android:name=".Edificacoes"
             android:exported="true" />

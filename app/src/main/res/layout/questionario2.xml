@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/questionarioTelefone"
         style="@style/inputCustom"
         android:layout_width="0dp"
         android:layout_height="45dp"
@@ -26,11 +26,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Condição climática"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+        app:layout_constraintStart_toStartOf="@+id/questionarioDataRealizacao"
+        app:layout_constraintTop_toBottomOf="@+id/questionarioDataRealizacao" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/questionarioCondClimatica"
         style="@style/inputCustom"
         android:layout_width="0dp"
         android:layout_height="45dp"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/questionarioDataRealizacao"
         style="@style/inputCustom"
         android:layout_width="0dp"
         android:layout_height="45dp"
@@ -63,8 +63,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="E-mail"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintStart_toStartOf="@+id/questionarioTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/questionarioTelefone" />
 
     <TextView
         android:id="@+id/textView19"
@@ -72,11 +72,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Data da realização"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintStart_toStartOf="@+id/questionarioEmail"
+        app:layout_constraintTop_toBottomOf="@+id/questionarioEmail" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/questionarioEmail"
         style="@style/inputCustom"
         android:layout_width="0dp"
         android:layout_height="45dp"
@@ -95,11 +95,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Telefone"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintStart_toStartOf="@+id/questionarioCREA"
+        app:layout_constraintTop_toBottomOf="@+id/questionarioCREA" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/questionarioCREA"
         style="@style/inputCustom"
         android:layout_width="0dp"
         android:layout_height="45dp"
@@ -119,20 +119,20 @@
         android:layout_marginTop="16dp"
         android:text="CREA"
         app:layout_constraintStart_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/questionarioResponsavelTecnico" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Responsavel técnico"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/questionarioResponsavelTecnico"
         style="@style/inputCustom"
         android:layout_width="0dp"
         android:layout_height="45dp"
@@ -143,4 +143,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView12"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Dados técnicos"
+        android:textColor="@color/amareloEscuro"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

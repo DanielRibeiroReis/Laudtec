@@ -2,12 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/questionario1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".normas">
 
     <Spinner
-        android:id="@+id/spinnerLaudo"
+        android:id="@+id/spinnerLaudo1"
         android:layout_width="164dp"
         android:layout_height="43dp"
         android:layout_marginStart="97dp"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtNorma"
+        android:id="@+id/txtNorma1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -38,7 +38,6 @@
         android:text="Norma aqui"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerLaudo" />
-
+        app:layout_constraintTop_toBottomOf="@+id/spinnerLaudo1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
