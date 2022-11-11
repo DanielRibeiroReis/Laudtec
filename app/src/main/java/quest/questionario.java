@@ -1,28 +1,25 @@
-package com.example.laudtec;
+package quest;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-
-import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.Layout;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+
+import com.example.laudtec.R;
+import com.example.laudtec.mostraPDF;
 
 
-import com.example.laudtec.databinding.Questionario5Binding;
+public class questionario extends PDF {
 
-public class questionario extends AppCompatActivity  {
 
     RadioGroup radioGroup;
     TextView textoNorma,textoEdificio;
@@ -48,6 +45,8 @@ public class questionario extends AppCompatActivity  {
         linear = findViewById(R.id.espacoquestionario);
 
         Salvar = findViewById(R.id.botaoSalvarQuestionario);
+
+
 
         questionario1 = findViewById(R.id.includeLayout1);
         questionario2 = findViewById(R.id.includeLayout2);
@@ -164,7 +163,7 @@ public class questionario extends AppCompatActivity  {
         Salvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(questionario7.getVisibility()==View.VISIBLE){//se a ultima pagina do questionario estiver ativa
+                if(questionario7.getVisibility()==View.VISIBLE){//botão inferior se a ultima pagina do questionario estiver ativa
                     Salvar.setText("Salvar");
 
                     textoNorma = findViewById(R.id.txtNorma);
@@ -176,13 +175,26 @@ public class questionario extends AppCompatActivity  {
                     telefone = findViewById(R.id.questionarioTelefone);
                     String textoTelefone = telefone.getText().toString();
 
+                    responsavel = findViewById(R.id.questionarioResponsavelTecnico);
+                    String  textoResponsavel = responsavel.getText().toString();
+
+
+
+                    criarPdf(textoCrea,textoResponsavel);
+
+                    Intent intent = new Intent(questionario.this, mostraPDF.class);
+                    startActivity(intent);
+
+
+
+
                    // email = findViewById(R.id.questionarioEmail).toString();
                    // dataRealizacao = findViewById(R.id.questionarioDataRealizacao).toString();
                    // condicaoClimatica = findViewById(R.id.questionarioJustificativa).toString();
 
 
-                    TextView quest7 = findViewById(R.id.ididquest7);
-                    quest7.setText(txtNorma + " " +textoCrea +" " + textoTelefone);
+
+
                 }else{
                     int selectedId = radioGroup.getCheckedRadioButtonId();
 

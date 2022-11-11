@@ -9,13 +9,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Toast;
 
-import com.example.laudtec.activity.MainActivity;
 import com.example.laudtec.adapter.AdapterEdificacoes;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import quest.questionario;
 
 public class Edificacoes extends AppCompatActivity {
 

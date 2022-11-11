@@ -22,8 +22,7 @@ public class Inicial extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicial);
 
-        ActivityCompat.requestPermissions(this, new String[]{
-                Manifest.permission.WRITE_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
+
 
 
 

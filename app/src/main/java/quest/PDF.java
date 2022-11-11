@@ -1,4 +1,4 @@
-package com.example.laudtec;
+package quest;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.laudtec.R;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -19,15 +21,17 @@ public class PDF extends AppCompatActivity {
     int larguraPagina = 1200; //criado para ser referenciado ao invés de escrever o numero
     int alturaPagina = 2010;
 
+
+
     Bitmap logoLaudtec;
 
 
 
 
 
-    public void criarPdf(){ // ajustar para o método receber os dados que precisa para fazer o pdf
+    public void criarPdf(String CREA,String nome){ // ajustar para o método receber os dados que precisa para fazer o pdf
 
-        logoLaudtec = BitmapFactory.decodeResource(getResources(),R.drawable.logo3); // importa o logo para logoLaudtec
+        logoLaudtec = BitmapFactory.decodeResource(getResources(), R.drawable.logo3); // importa o logo para logoLaudtec
 
         PdfDocument myPdfDocument = new PdfDocument(); //setups para criar o pdf
         Paint paint = new Paint();
@@ -45,8 +49,8 @@ public class PDF extends AppCompatActivity {
 
         paint.setTextAlign(Paint.Align.CENTER);
         paint.setTextSize(70);
-        //canvas.drawText(campo1.getText().toString(), larguraPagina/2,540,myPaint);
-        //canvas.drawText(campo2.getText().toString(), larguraPagina/2,680,myPaint);
+        canvas.drawText(CREA, larguraPagina/2,540,paint);
+        canvas.drawText(nome, larguraPagina/2,680,paint);
 
         myPdfDocument.finishPage(Pagina1);
 
