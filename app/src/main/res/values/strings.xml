@@ -14,9 +14,9 @@
 
 
     <string-array name="normas">
-        <item>Norma 1</item>
-        <item>Norma 2</item>
-        <item>Norma 3</item>
+        <item>NBR 5410:2004</item>
+        <item>NBR 5419:2015</item>
+        <item>10 NR 10</item>
 
     </string-array>
 </resources>

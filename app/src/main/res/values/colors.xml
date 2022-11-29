@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="amareloEscuro">#CEAA5B</color>
-    <color name="cinzaLabel">#AEAEAE</color>
+    <color name="cinzaLabel">#7f7f7f</color>
     <color name="brancoTexto">#FFFDFD</color>
+    <color name="pretoTexto">#313131</color>
+
 </resources>

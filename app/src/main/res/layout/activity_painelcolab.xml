@@ -9,15 +9,6 @@
 
 
     <TextView
-        android:id="@+id/labelGestaoColab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Serviços Gerenciais"
-        app:layout_constraintStart_toStartOf="@+id/gestaoColab"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
-
-    <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,7 +18,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gestaoColab" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/idNumeroLaudosPreliminaresPainel"
@@ -249,21 +240,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo1" />
-
-    <Button
-        android:id="@+id/gestaoColab"
-        style="@style/botaoPainel"
-        android:layout_width="0dp"
-        android:layout_height="75dp"
-        android:background="@drawable/botao_painel"
-        android:drawableStart="@drawable/ic_colaboradores"
-        android:drawablePadding="8dp"
-        android:text="Gestão de Colaboradores"
-        app:layout_constraintEnd_toEndOf="@+id/botaoPainelEquipamentos"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/painelEdificacoessid"
-        app:layout_constraintTop_toBottomOf="@+id/labelGestaoColab"
-        tools:visibility="visible" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

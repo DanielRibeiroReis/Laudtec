@@ -7,8 +7,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,23 +14,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
-
-
-        >
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        <activity
+            android:name=".painelcolab"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".listas.normas"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".lista_colaboradores"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
 
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.homefolder.example.provider"
             android:exported="false"
-            android:grantUriPermissions="true"
+            android:grantUriPermissions="true">
 
-            >
             <!-- ressource file to create -->
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths">
-            </meta-data>
+                android:resource="@xml/file_paths" />
         </provider>
 
         <activity
@@ -42,19 +56,11 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-        <activity
-            android:name=".normas"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
         <activity
             android:name="quest.questionario"
             android:exported="true" />
         <activity
-            android:name=".Edificacoes"
+            android:name=".listas.Edificacoes"
             android:exported="true" />
         <activity
             android:name=".redefinir_senha"
@@ -77,11 +83,6 @@
         <activity
             android:name=".activity.MainActivity"
             android:exported="true">
-
-
-
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -89,9 +90,5 @@
             </intent-filter>
         </activity>
     </application>
-
-
-
-
 
 </manifest>

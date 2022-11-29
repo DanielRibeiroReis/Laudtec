@@ -1,15 +1,17 @@
-package com.example.laudtec;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
+package com.example.laudtec.listas;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.laudtec.ClickListener;
+import com.example.laudtec.R;
 import com.example.laudtec.adapter.AdapterEdificacoes;
 
 import java.util.ArrayList;
@@ -20,7 +22,7 @@ import quest.questionario;
 public class Edificacoes extends AppCompatActivity {
 
     public RecyclerView listaEdificacoes;
-
+    public TextView label;
     public List<com.example.laudtec.model.Edificacoes> listaEdificios = new ArrayList<com.example.laudtec.model.Edificacoes>();
 
     @Override
@@ -29,7 +31,7 @@ public class Edificacoes extends AppCompatActivity {
         setContentView(R.layout.activity_edificacoes);
 
         listaEdificacoes = findViewById(R.id.listaEdificacoes);
-
+        label = findViewById(R.id.labelNumeroEdificacoes);
         //Listagem Edificações
         this.listarEd();
 
@@ -103,6 +105,8 @@ public class Edificacoes extends AppCompatActivity {
         edificio  = new com.example.laudtec.model.Edificacoes("Res. Daniel4","1mil inc.");
         this.listaEdificios.add(edificio);
 
+
+        label.setText("Você possui " + this.listaEdificios.size() + " edifícios cadastradas");
 
 
 
