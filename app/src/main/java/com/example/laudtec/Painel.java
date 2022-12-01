@@ -7,11 +7,13 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.laudtec.activity.MainActivity;
 import com.example.laudtec.listas.Edificacoes;
 
 
-public class Painel extends Inicial {
+public class Painel extends AppCompatActivity {
 
     public Button edificacoes,normas,questionarios,equipamentos,laudoPreliminar,laudoFinal,botaoColab;
     public TextView labelEdificacoes,labelNormas,labelQuestionario,labelEquipamento,labelLaudoPrel,labelLaudoFinal,labelColab;

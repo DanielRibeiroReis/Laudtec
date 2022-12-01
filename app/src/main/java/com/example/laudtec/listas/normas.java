@@ -27,7 +27,7 @@ public class normas extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_normas);
+        setContentView(R.layout.activity_lista_normas);
         label = findViewById(R.id.labelNumeroEdificacoes);
         listaNormas = findViewById(R.id.listaNormasid);
 

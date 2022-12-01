@@ -28,7 +28,7 @@ public class Edificacoes extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edificacoes);
+        setContentView(R.layout.activity_lista_edificacoes);
 
         listaEdificacoes = findViewById(R.id.listaEdificacoes);
         label = findViewById(R.id.labelNumeroEdificacoes);
