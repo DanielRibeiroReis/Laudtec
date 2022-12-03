@@ -19,7 +19,7 @@ import java.util.List;
 
 import quest.questionario;
 
-public class Edificacoes extends AppCompatActivity {
+public class lista_edificacoes extends AppCompatActivity {
 
     public RecyclerView listaEdificacoes;
     public TextView label;
@@ -31,7 +31,7 @@ public class Edificacoes extends AppCompatActivity {
         setContentView(R.layout.activity_lista_edificacoes);
 
         listaEdificacoes = findViewById(R.id.listaEdificacoes);
-        label = findViewById(R.id.labelNumeroEdificacoes);
+        label = findViewById(R.id.labelNumeroQuestionarios);
         //Listagem Edificações
         this.listarEd();
 
@@ -50,7 +50,7 @@ public class Edificacoes extends AppCompatActivity {
                     public void onItemClick(View view, int position) {
                         com.example.laudtec.model.Edificacoes edificios = listaEdificios.get(position);
                         //Toast.makeText(Edificacoes.this, "click curto " + edificios.getNomeEdificio(), Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(Edificacoes.this, questionario.class);
+                        Intent intent = new Intent(lista_edificacoes.this, questionario.class);
                         String extraEdificio = edificios.getNomeEdificio();
                         intent.putExtra("NOME_EDIFIO_SELEC" ,extraEdificio);
                         startActivity(intent);

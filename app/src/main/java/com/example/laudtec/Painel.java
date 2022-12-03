@@ -9,8 +9,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.laudtec.activity.MainActivity;
-import com.example.laudtec.listas.Edificacoes;
+import com.example.laudtec.listas.lista_edificacoes;
+import com.example.laudtec.listas.lista_normas;
 
 
 public class Painel extends AppCompatActivity {
@@ -41,7 +41,7 @@ public class Painel extends AppCompatActivity {
         edificacoes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Painel.this, Edificacoes.class);
+                Intent intent = new Intent(Painel.this, lista_edificacoes.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +49,7 @@ public class Painel extends AppCompatActivity {
         normas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Painel.this, com.example.laudtec.listas.normas.class);
+                Intent intent = new Intent(Painel.this, lista_normas.class);
                 startActivity(intent);
             }
         });

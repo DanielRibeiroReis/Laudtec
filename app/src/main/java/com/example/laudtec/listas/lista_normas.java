@@ -17,18 +17,17 @@ import com.example.laudtec.model.Normas;
 import java.util.ArrayList;
 import java.util.List;
 
-public class normas extends AppCompatActivity {
+public class lista_normas extends AppCompatActivity {
 
     public RecyclerView listaNormas;
     public TextView label;
     public List<com.example.laudtec.model.Normas> listagemNorma = new ArrayList();
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_normas);
-        label = findViewById(R.id.labelNumeroEdificacoes);
+        label = findViewById(R.id.labelNumeroQuestionarios);
         listaNormas = findViewById(R.id.listaNormasid);
 
         //Listagem Edificações

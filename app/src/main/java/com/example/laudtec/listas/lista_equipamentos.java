@@ -1,12 +1,12 @@
 package com.example.laudtec.listas;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.laudtec.R;
 
-public class equipamentos extends AppCompatActivity {
+public class lista_equipamentos extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

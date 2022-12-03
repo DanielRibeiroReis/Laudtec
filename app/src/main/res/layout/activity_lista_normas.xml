@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/aaaa"
-    tools:context=".listas.Edificacoes">
+    tools:context=".listas.lista_edificacoes">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listaNormasid"

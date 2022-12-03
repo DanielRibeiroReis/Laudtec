@@ -23,14 +23,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".listas.lista_questiionarios"
+            android:name=".listas.lista_questionarios"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".listas.equipamentos"
+            android:name=".listas.lista_equipamentos"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -44,7 +44,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".listas.normas"
+            android:name=".listas.lista_normas"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -81,7 +81,7 @@
             android:name="quest.questionario"
             android:exported="true" />
         <activity
-            android:name=".listas.Edificacoes"
+            android:name=".listas.lista_edificacoes"
             android:exported="true" />
         <activity
             android:name=".redefinir_senha"
