@@ -15,9 +15,12 @@ import java.util.List;
 
 public class AdapterColaboradores extends RecyclerView.Adapter<AdapterColaboradores.ColaboradoresVH> {
 
-    public List<Colaboradores> listaColaboradores;
-    public AdapterColaboradores(List<Colaboradores> lista){
-        this.listaColaboradores = lista;
+    private List<Colaboradores> listaColaboradores;
+    public AdapterColaboradores(List<Colaboradores> listaColaboradores){this.listaColaboradores = listaColaboradores;}
+
+    public void setListaFiltradaColaboradores (List<Colaboradores> filteredList){
+        this.listaColaboradores = filteredList;
+        notifyDataSetChanged();
     }
 
 

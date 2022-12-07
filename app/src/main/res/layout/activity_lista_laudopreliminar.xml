@@ -13,10 +13,10 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/pesquisaColaboradores"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/pesquisaColaboradores"
+        app:layout_constraintTop_toBottomOf="@+id/pesquisaColaboradores" />
 
     <TextView
         android:id="@+id/textView8"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/labelNumeroQuestionarios"
+        android:id="@+id/labelNumeroLaudoPreliminar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -40,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/pesquisaColaboradores"
         style="@style/inputCustom"
         android:layout_width="0dp"
         android:layout_height="50dp"
@@ -54,7 +54,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/labelNumeroQuestionarios" />
+        app:layout_constraintTop_toBottomOf="@+id/labelNumeroLaudoPreliminar" />
 
     <Button
         android:id="@+id/adicionarEdificacoes"

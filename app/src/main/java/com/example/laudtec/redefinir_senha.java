@@ -17,7 +17,7 @@ public class redefinir_senha extends AppCompatActivity {
 
         entrarRedefinicao = (Button) findViewById(R.id.botaoRedefinirSenhaid);
 
-        Intent intent = new Intent (redefinir_senha.this, Painel.class);
+        Intent intent = new Intent (redefinir_senha.this, painelAdm.class);
         startActivity(intent);
 
 

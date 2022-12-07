@@ -5,12 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.laudtec.listas.lista_edificacoes;
+import com.example.laudtec.listas.lista_laudofinal;
+import com.example.laudtec.listas.lista_laudopreliminar;
 import com.example.laudtec.listas.lista_normas;
+import com.example.laudtec.listas.lista_questionarios;
 
 
 public class painelcolab extends AppCompatActivity {
@@ -22,7 +24,7 @@ public class painelcolab extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_paineladm);
+        setContentView(R.layout.activity_painelcolab);
 
         edificacoes = findViewById(R.id.painelEdificacoessid);
         normas = findViewById(R.id.botaoPainelNormas);
@@ -31,8 +33,8 @@ public class painelcolab extends AppCompatActivity {
         laudoPreliminar = findViewById(R.id.botaoPainelLaudoPreliminar);
         laudoFinal = findViewById(R.id.botaoPainelLaudoFinal);
 
-        botaoColab = findViewById(R.id.gestaoColab);
-        labelColab = findViewById(R.id.labelGestaoColab);
+        //botaoColab = findViewById(R.id.gestaoColab);
+        //labelColab = findViewById(R.id.labelGestaoColab);
 
 
 
@@ -57,36 +59,35 @@ public class painelcolab extends AppCompatActivity {
         questionarios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Intent intent = new Intent(painecolab.this, Questionarios.class);
-                // startActivity(intent);
-                Toast.makeText(painelcolab.this, "Questionarios", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(painelcolab.this, lista_questionarios.class);
+                startActivity(intent);
+
             }
         });
 
         equipamentos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(painecolab.this, Equipamentos.class);
-                //startActivity(intent);
-                Toast.makeText(painelcolab.this, "equipamentos", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(painelcolab.this, com.example.laudtec.listas.lista_equipamentos.class);
+                startActivity(intent);
+
             }
         });
 
         laudoPreliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(painecolab.this, Equipamentos.class);
-                //startActivity(intent);
-                Toast.makeText(painelcolab.this, "laudo preliminar", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(painelcolab.this, lista_laudopreliminar.class);
+                startActivity(intent);
+
             }
         });
 
         laudoFinal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(painecolab.this, Equipamentos.class);
-                //startActivity(intent);
-                Toast.makeText(painelcolab.this, "laudo final", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(painelcolab.this, lista_laudofinal.class);
+                startActivity(intent);
             }
         });
 

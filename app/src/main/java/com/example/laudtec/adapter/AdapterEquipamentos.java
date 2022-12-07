@@ -9,14 +9,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.laudtec.R;
-import com.example.laudtec.model.Edificacoes;
+import com.example.laudtec.model.Equipamentos;
 
 import java.util.List;
 
 public class AdapterEquipamentos extends RecyclerView.Adapter<AdapterEquipamentos.EquipamentosVH> {
 
-    public List<Edificacoes> listaEquipamentos;
-    public AdapterEquipamentos(List<Edificacoes> lista){
+    public List<Equipamentos> listaEquipamentos;
+    public AdapterEquipamentos(List<Equipamentos> lista){
         this.listaEquipamentos = lista;
     }
 
@@ -34,11 +34,11 @@ public class AdapterEquipamentos extends RecyclerView.Adapter<AdapterEquipamento
     @Override
     public void onBindViewHolder(@NonNull AdapterEquipamentos.EquipamentosVH holder, int position) {
 
-        Edificacoes edificio = listaEquipamentos.get(position);
+        Equipamentos equipamentos = listaEquipamentos.get(position);
 
 
-        holder.nomeEquipamento.setText(edificio.getNomeCompania());
-        holder.modeloEquipamento.setText(edificio.getNomeEdificio());
+        holder.nomeEquipamento.setText(equipamentos.getNomeEquipamentos());
+        holder.modeloEquipamento.setText(equipamentos.getModeloEquipamentos());
 
     }
 

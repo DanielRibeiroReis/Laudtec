@@ -9,15 +9,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.laudtec.R;
-import com.example.laudtec.model.LaudoFinal;
+import com.example.laudtec.model.LaudoPreliminar;
 
 import java.util.List;
 
 public class AdapterLaudoPreliminar extends RecyclerView.Adapter<AdapterLaudoPreliminar.LaudoPreliminarVH> {
 
-    public List<LaudoFinal> listaEdificacoes;
-    public AdapterLaudoPreliminar(List<LaudoFinal> lista){
-        this.listaEdificacoes = lista;
+    public List<LaudoPreliminar> listaLaudoPreliminar;
+    public AdapterLaudoPreliminar(List<LaudoPreliminar> lista){
+        this.listaLaudoPreliminar = lista;
     }
 
 
@@ -34,17 +34,17 @@ public class AdapterLaudoPreliminar extends RecyclerView.Adapter<AdapterLaudoPre
     @Override
     public void onBindViewHolder(@NonNull AdapterLaudoPreliminar.LaudoPreliminarVH holder, int position) {
 
-        LaudoFinal edificio = listaEdificacoes.get(position);
+        LaudoPreliminar laudoPreliminar = listaLaudoPreliminar.get(position);
 
 
-        holder.compEdificio.setText(edificio.getNomeCompania());
-        holder.nomeEdificio.setText(edificio.getNomeEdificio());
+        holder.compEdificio.setText(laudoPreliminar.getNomeCompania());
+        holder.nomeEdificio.setText(laudoPreliminar.getNomeEdificio());
 
     }
 
     @Override
     public int getItemCount() {
-        return listaEdificacoes.size();
+        return listaLaudoPreliminar.size();
     }
 
     public class LaudoPreliminarVH extends RecyclerView.ViewHolder {

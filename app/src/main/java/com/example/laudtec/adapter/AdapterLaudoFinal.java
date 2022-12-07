@@ -15,9 +15,9 @@ import java.util.List;
 
 public class AdapterLaudoFinal extends RecyclerView.Adapter<AdapterLaudoFinal.LaudoFinalVH> {
 
-    public List<LaudoFinal> listaEdificacoes;
+    public List<LaudoFinal> listaLaudoFinal;
     public AdapterLaudoFinal(List<LaudoFinal> lista){
-        this.listaEdificacoes = lista;
+        this.listaLaudoFinal = lista;
     }
 
 
@@ -34,22 +34,22 @@ public class AdapterLaudoFinal extends RecyclerView.Adapter<AdapterLaudoFinal.La
     @Override
     public void onBindViewHolder(@NonNull AdapterLaudoFinal.LaudoFinalVH holder, int position) {
 
-        LaudoFinal edificio = listaEdificacoes.get(position);
+        LaudoFinal laudoFinal = listaLaudoFinal.get(position);
 
 
-        holder.compEdificio.setText(edificio.getNomeCompania());
-        holder.nomeEdificio.setText(edificio.getNomeEdificio());
+        holder.dataAtualizacao.setText(laudoFinal.getDataAtualizacao());
+        holder.nomeEdificio.setText(laudoFinal.getNomeEdificio());
 
     }
 
     @Override
     public int getItemCount() {
-        return listaEdificacoes.size();
+        return listaLaudoFinal.size();
     }
 
     public class LaudoFinalVH extends RecyclerView.ViewHolder {
         TextView nomeEdificio;
-        TextView compEdificio;
+        TextView dataAtualizacao;
 
 
 
@@ -57,7 +57,7 @@ public class AdapterLaudoFinal extends RecyclerView.Adapter<AdapterLaudoFinal.La
             super(itemView);
 
             nomeEdificio = itemView.findViewById(R.id.nomeEdificioid);
-            compEdificio = itemView.findViewById(R.id.nomeCompaniaId);
+            dataAtualizacao = itemView.findViewById(R.id.nomeCompaniaId);
         }
     }
 

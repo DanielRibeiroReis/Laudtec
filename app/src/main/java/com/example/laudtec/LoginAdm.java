@@ -34,7 +34,7 @@ public class LoginAdm extends Inicial {
             entrarConta.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(LoginAdm.this, Painel.class);
+                    Intent intent = new Intent(LoginAdm.this, painelAdm.class);
                     startActivity(intent);
                 }
             });

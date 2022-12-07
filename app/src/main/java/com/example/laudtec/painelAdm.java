@@ -5,15 +5,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.laudtec.listas.lista_colaboradores;
 import com.example.laudtec.listas.lista_edificacoes;
+import com.example.laudtec.listas.lista_equipamentos;
+import com.example.laudtec.listas.lista_laudofinal;
+import com.example.laudtec.listas.lista_laudopreliminar;
 import com.example.laudtec.listas.lista_normas;
+import com.example.laudtec.listas.lista_questionarios;
 
 
-public class Painel extends AppCompatActivity {
+public class painelAdm extends Inicial {
 
     public Button edificacoes,normas,questionarios,equipamentos,laudoPreliminar,laudoFinal,botaoColab;
     public TextView labelEdificacoes,labelNormas,labelQuestionario,labelEquipamento,labelLaudoPrel,labelLaudoFinal,labelColab;
@@ -37,11 +39,18 @@ public class Painel extends AppCompatActivity {
 
 
 
+        botaoColab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(painelAdm.this, lista_colaboradores.class);
+                startActivity(intent);
+            }
+        });
 
         edificacoes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Painel.this, lista_edificacoes.class);
+                Intent intent = new Intent(painelAdm.this, lista_edificacoes.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +58,7 @@ public class Painel extends AppCompatActivity {
         normas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Painel.this, lista_normas.class);
+                Intent intent = new Intent(painelAdm.this, lista_normas.class);
                 startActivity(intent);
             }
         });
@@ -57,36 +66,35 @@ public class Painel extends AppCompatActivity {
         questionarios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // Intent intent = new Intent(Painel.this, Questionarios.class);
-               // startActivity(intent);
-                Toast.makeText(Painel.this, "Questionarios", Toast.LENGTH_SHORT).show();
+               Intent intent = new Intent(painelAdm.this, lista_questionarios.class);
+               startActivity(intent);
+
             }
         });
 
         equipamentos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                 //Intent intent = new Intent(Painel.this, Equipamentos.class);
-                 //startActivity(intent);
-                Toast.makeText(Painel.this, "equipamentos", Toast.LENGTH_SHORT).show();
+                 Intent intent = new Intent(painelAdm.this, lista_equipamentos.class);
+                 startActivity(intent);
+
             }
         });
 
         laudoPreliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(Painel.this, Equipamentos.class);
-                //startActivity(intent);
-                Toast.makeText(Painel.this, "laudo preliminar", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(painelAdm.this, lista_laudopreliminar.class);
+                startActivity(intent);
+
             }
         });
 
         laudoFinal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(Painel.this, Equipamentos.class);
-                //startActivity(intent);
-                Toast.makeText(Painel.this, "laudo final", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(painelAdm.this, lista_laudofinal.class);
+                startActivity(intent);
             }
         });
 

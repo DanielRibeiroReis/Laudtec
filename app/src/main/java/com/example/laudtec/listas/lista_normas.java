@@ -27,7 +27,7 @@ public class lista_normas extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_normas);
-        label = findViewById(R.id.labelNumeroQuestionarios);
+        label = findViewById(R.id.labelNumeroNormas);
         listaNormas = findViewById(R.id.listaNormasid);
 
         //Listagem Edificações

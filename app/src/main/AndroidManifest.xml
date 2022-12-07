@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -15,6 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        <activity
+            android:name=".listas.lista_laudofinal"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".listas.lista_laudopreliminar"
             android:exported="false">
@@ -51,7 +59,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".lista_colaboradores"
+            android:name=".listas.lista_colaboradores"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -93,7 +101,7 @@
             android:name=".EsqueciSenha"
             android:exported="true" />
         <activity
-            android:name=".Painel"
+            android:name=".painelAdm"
             android:exported="true" />
         <activity
             android:name=".LoginAdm"

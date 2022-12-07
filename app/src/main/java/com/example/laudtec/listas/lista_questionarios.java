@@ -21,13 +21,13 @@ public class lista_questionarios extends AppCompatActivity {
 
     public RecyclerView listaQuestionario;
     public TextView labelQuestionario;
-    public List<com.example.laudtec.model.Questionarios> listagemQuestionario = new ArrayList<>();
+    public List<com.example.laudtec.model.Questionarios> listagemQuestionario = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_questionarios);
-        labelQuestionario = findViewById(R.id.labelNumeroQuestionarios);
+        labelQuestionario = findViewById(R.id.labelNumeroLaudoPreliminar);
         listaQuestionario = findViewById(R.id.listaQuestionarios);
 
         //Listagem Questionarios

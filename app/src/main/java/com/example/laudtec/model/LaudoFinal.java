@@ -20,7 +20,7 @@ public class LaudoFinal {
         this.nomeEdificio = nomeEdificio;
     }
 
-    public String getNomeCompania() {
+    public String getDataAtualizacao() {
         return dataAtualizado;
     }
 

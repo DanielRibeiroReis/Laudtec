@@ -5,19 +5,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.laudtec.activity.MainActivity;
+import quest.PDF;
 
 
-public class Inicial extends MainActivity {
+public class Inicial extends PDF {
 
-    public Button loginAdministrador, loginColaborador;
+    public Button loginAdministrador, loginColaborador,gerarPDF;
+    private PDF gerador;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicial);
-
+        gerarPDF = findViewById(R.id.geraDev);
         loginAdministrador = (Button) findViewById(R.id.entraAdministrador);
         loginColaborador = (Button) findViewById(R.id.entraColaborador);
         loginColaborador.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +36,14 @@ public class Inicial extends MainActivity {
                 Intent logAdm = new Intent(Inicial.this, LoginAdm.class);
                 logAdm.putExtra("LOG",true);
                 startActivity(logAdm);
+            }
+        });
+
+        gerarPDF.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                criarPdf();
             }
         });
 

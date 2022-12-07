@@ -20,14 +20,12 @@ public class AdapterEdificacoes extends RecyclerView.Adapter<AdapterEdificacoes.
         this.listaEdificacoes = lista;
     }
 
-
     @NonNull
     @Override
     public EdificacoesVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View itemLista = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.listagem_edificacoes,parent,false);
-
         return new EdificacoesVH(itemLista);
     }
 

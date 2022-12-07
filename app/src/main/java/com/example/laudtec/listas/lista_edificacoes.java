@@ -23,15 +23,15 @@ public class lista_edificacoes extends AppCompatActivity {
 
     public RecyclerView listaEdificacoes;
     public TextView label;
-    public List<com.example.laudtec.model.Edificacoes> listaEdificios = new ArrayList<com.example.laudtec.model.Edificacoes>();
+    public List<com.example.laudtec.model.Edificacoes> listaEdificios = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_edificacoes);
 
-        listaEdificacoes = findViewById(R.id.listaEdificacoes);
-        label = findViewById(R.id.labelNumeroQuestionarios);
+        listaEdificacoes = findViewById(R.id.listaEquipamentos);
+        label = findViewById(R.id.labelNumeroLaudoPreliminar);
         //Listagem Edificações
         this.listarEd();
 

@@ -40,7 +40,7 @@ public class questionario extends PDF {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questionario);
 
-        //textoNorma = findViewById(R.id.txtNorma);
+        textoNorma = findViewById(R.id.txtNorma);
 
         linear = findViewById(R.id.espacoquestionario);
 
@@ -92,10 +92,10 @@ public class questionario extends PDF {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i == 0) {//primeiro item
-                    //textoNorma.setText("laudo spinner 1");
+                    textoNorma.setText(getString(R.string.NBR54102000));
                 }
                 if (i == 1) {
-                    //textoNorma.setText("laudo spinner 2");
+                    textoNorma.setText(getString(R.string.NBR54192000));
                 }
                 if (i == 2) {
                     //textoNorma.setText("laudo spinner 3");
@@ -180,7 +180,7 @@ public class questionario extends PDF {
 
 
 
-                    criarPdf(textoCrea,textoResponsavel);
+                    criarPdf();
 
                     Intent intent = new Intent(questionario.this, mostraPDF.class);
                     startActivity(intent);
